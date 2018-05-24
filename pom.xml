@@ -9,12 +9,6 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<distributionManagement>
-		<repository>
-			<id>maven-snapshots</id>
-			<url>http://10.6.33.20:8081/repository/maven-snapshots</url>
-		</repository>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -23,5 +17,20 @@
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+
+
+	<parent>
+		<groupId>tech.libra</groupId>
+		<artifactId>libra-tech-test-master</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+
+	<distributionManagement>
+		<repository>
+			<id>maven-snapshots</id>
+			<url>http://10.6.33.20:8081/repository/maven-snapshots</url>
+		</repository>
+	</distributionManagement>
 
 </project>
