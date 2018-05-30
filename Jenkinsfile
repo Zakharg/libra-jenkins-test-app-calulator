@@ -16,7 +16,7 @@ pipeline {
                     sh 'mvn docker:build'
                 }
             }
-        
+        }
 
         
         stage ('Deployment Stage') {
