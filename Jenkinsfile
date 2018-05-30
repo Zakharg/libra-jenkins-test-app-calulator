@@ -9,6 +9,15 @@ pipeline {
                 }
             }
         }
+         
+        stage ('Docker build') {
+            steps {
+                withMaven(maven : 'Maven 3.5.0', globalMavenSettingsConfig: "GlobalMavenSettings.xml.20171122") {
+                    sh 'mvn docker:build'
+                }
+            }
+        
+
         
         stage ('Deployment Stage') {
             steps {
@@ -18,5 +27,4 @@ pipeline {
             }
         }
     }
-
 }
