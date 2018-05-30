@@ -4,19 +4,24 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-
-	<groupId>tech.libra</groupId>
-	<artifactId>libra-jenkins-test-app-calculator</artifactId>
-	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-
 	<parent>
 		<groupId>tech.libra</groupId>
 		<artifactId>libra-jenkins-test-master</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
+
+	<groupId>tech.libra</groupId>
+	<artifactId>libra-jenkins-test-app-calculator</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<scm>
+		<connection>scm:git:git@github.com:Zakharg/libra-jenkins-test-app-calculator.git</connection>
+		<url>scm:git:git@github.com:Zakharg/libra-jenkins-test-app-calculator.git</url>
+		<developerConnection>scm:git:git@github.com:Zakharg/libra-jenkins-test-app-calculator.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 
